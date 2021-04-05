@@ -1,0 +1,18 @@
+<%- include('../header'); -%>
+<%- include('../navbar'); -%>
+<script src="https://cdn.tiny.cloud/1/ja33wyh1ruh0gh2moicqynmi9lz3yj8ubeqfykzfqlb1vvnt/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<form action="/addPosts" method="post">
+    Enter Title:<br>
+    <input type="title" name="title" id="title">
+    <br>
+    Enter Content:<br>
+    <textarea name="content" id="content" cols="150" rows="20"></textarea><br>
+    <input type="submit" value="Add Blog">
+</form>
+<script>
+    tinymce.init({
+      selector: '#content'
+    });
+</script>
+<%- include('../partials/footer'); -%>

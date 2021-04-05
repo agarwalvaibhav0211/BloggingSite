@@ -1,0 +1,22 @@
+<%- include('../header'); -%>
+<%- include('../navbar'); -%>
+
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <!-- List group-->
+        <ul class="list-group shadow">
+            <li class="list-group-item">
+                <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                    <div class="media-body order-2 order-lg-1">
+                        <h2 class="mt-0 font-weight-bold mb-2"><%- blogs['title'] %></h5>
+                        <h4 class="mt-0 font-weight-bold mb-2">by <em><%- blogs['author'] %></em></h5>
+                        <p class="font-italic text-muted mb-0 small"><%- blogs['content'] %></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<%- include('../partials/footer'); -%>
